@@ -40,7 +40,7 @@ class Scrapping extends Controller
     {
         $linkArray= $this->scraplinks();
         
-        For($i=0; $i<10; $i++){
+        For($i=0; $i<100; $i++){
             
            
             
