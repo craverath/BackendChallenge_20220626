@@ -4,7 +4,7 @@
 
 #### Contrução do projeto:
 
-######Para criar essa API, foi usado o Laravel com as seguintes bibliotecas:
+###### Para criar essa API, foi usado o Laravel com as seguintes bibliotecas:
 
 - `guzzlehttp/guzzle`: Esta biblioteca facilita a fazer requisições HTTP a servidores. Ela é uma biblioteca completa e bem documentada que suporta uma ampla gama de recursos, incluindo requisições assíncronas, cURL, proxies e muito mais.
 - `symfony/dom-crawler`: Esta biblioteca facilita a extração de dados de páginas da web. Ela permite que você navegue pelas páginas da web, selecione elementos e extraia o conteúdo deles.
@@ -15,13 +15,12 @@ O banco de dados escolhido foi o MySQL e foi criado via `Migrate`.
 Esses dados são usados pelo `ProductsController` para adicionar os dados ao banco usando o Eloquent do Laravel. Dentro do próprio `ProductsController`, foram criados os métodos para consultar os dados usando o Model `Products`
 O método e a classe responsável por inserir os dados no banco foram instanciados dentro do `app/console/Kernel` de forma que todos os dias às 2 da manhã aconteça o scrapping dos 100 produtos e sua inserção no banco de dados.
 
-######
 
 
-####Instalação
-Para executar a API, execute o comando php artisan serve.
+#### Instalação
+Para executar a API, execute o comando `php artisan serve`
 
-Para iniciar o agendamento, execute o comando php artisan schedule:work.
+Para iniciar o agendamento, execute o comando `php artisan schedule:work`
 
 A rota `/` retorna:
 
