@@ -32,7 +32,7 @@ class ProductsController extends Controller
             $product->code = $item['code'];
             $valida = $product->save();             
         } 
-        //return $arrayProd;
+        
        
     }
 
